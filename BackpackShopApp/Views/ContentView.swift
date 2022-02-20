@@ -41,10 +41,9 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            /*ContentView()
+            ContentView()
                 .previewDevice(PreviewDevice(rawValue: "iPad Pro (9.7-inch)"))
                 .previewDisplayName("iPad Pro (9.7-inch)")
-            */
             ContentView()
                 .previewInterfaceOrientation(.portraitUpsideDown)
             
