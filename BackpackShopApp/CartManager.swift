@@ -37,4 +37,13 @@ class CartManager: ObservableObject {
             total -= product.price
         }
     }
+    
+    func completeRemoveFromCart(product: Product){
+        
+        if let index = productCartList.firstIndex(where: {$0.product.id == product.id}) {
+            count -= productCartList[index].amount
+            total -= product.price * productCartList[index].amount
+            productCartList.remove(at: index)
+        }
+    }
 }
