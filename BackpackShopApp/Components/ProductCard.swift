@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProductCard: View {
+    @EnvironmentObject var cartManager: CartManager
     var product: Product
     
     var body: some View {
@@ -33,12 +34,26 @@ struct ProductCard: View {
             }
             .frame(width: 180, height: 250)
             .shadow(radius: 3)
+            
+            Button{
+               cartManager.addToCart(product: product)
+            } label: {
+                Image(systemName: "plus")
+                    .padding(10)
+                    .foregroundColor(.black)
+                    .background(.white)
+                    .cornerRadius(50)
+                    .shadow(radius: 3)
+                    .padding()
+                
+            }
         }
     }
 }
 
 struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCard(product: productList[0])
+        ProductCard(product: productList[6])
+            .environmentObject(CartManager())
     }
 }

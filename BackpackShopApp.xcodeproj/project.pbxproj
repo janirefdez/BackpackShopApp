@@ -13,6 +13,11 @@
 		0918DD7127C19B0C00113D66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0918DD7027C19B0C00113D66 /* Preview Assets.xcassets */; };
 		0918DD8A27C1A48500113D66 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918DD8927C1A48500113D66 /* Product.swift */; };
 		0918DD8C27C1A53100113D66 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918DD8B27C1A53100113D66 /* ProductCard.swift */; };
+		0918DD8E27C1A8EC00113D66 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918DD8D27C1A8EC00113D66 /* CartButton.swift */; };
+		0918DD9027C1A94800113D66 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918DD8F27C1A94800113D66 /* CartManager.swift */; };
+		0918DD9227C1A97800113D66 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918DD9127C1A97800113D66 /* CartView.swift */; };
+		0918DD9427C1A99D00113D66 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918DD9327C1A99D00113D66 /* ProductRow.swift */; };
+		0918DD9627C1B4E900113D66 /* ProductCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918DD9527C1B4E900113D66 /* ProductCart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		0918DD7027C19B0C00113D66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0918DD8927C1A48500113D66 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		0918DD8B27C1A53100113D66 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		0918DD8D27C1A8EC00113D66 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		0918DD8F27C1A94800113D66 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		0918DD9127C1A97800113D66 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		0918DD9327C1A99D00113D66 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		0918DD9527C1B4E900113D66 /* ProductCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0918DD6927C19B0A00113D66 /* BackpackShopAppApp.swift */,
+				0918DD8F27C1A94800113D66 /* CartManager.swift */,
 				0918DD8527C1A3D100113D66 /* Views */,
 				0918DD8427C1A3C500113D66 /* Components */,
 				0918DD8827C1A43D00113D66 /* Models */,
@@ -77,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				0918DD8B27C1A53100113D66 /* ProductCard.swift */,
+				0918DD8D27C1A8EC00113D66 /* CartButton.swift */,
+				0918DD9327C1A99D00113D66 /* ProductRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -85,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				0918DD6B27C19B0A00113D66 /* ContentView.swift */,
+				0918DD9127C1A97800113D66 /* CartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0918DD8927C1A48500113D66 /* Product.swift */,
+				0918DD9527C1B4E900113D66 /* ProductCart.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,9 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0918DD6C27C19B0A00113D66 /* ContentView.swift in Sources */,
+				0918DD9227C1A97800113D66 /* CartView.swift in Sources */,
+				0918DD9027C1A94800113D66 /* CartManager.swift in Sources */,
 				0918DD6A27C19B0A00113D66 /* BackpackShopAppApp.swift in Sources */,
+				0918DD9427C1A99D00113D66 /* ProductRow.swift in Sources */,
+				0918DD9627C1B4E900113D66 /* ProductCart.swift in Sources */,
 				0918DD8A27C1A48500113D66 /* Product.swift in Sources */,
 				0918DD8C27C1A53100113D66 /* ProductCard.swift in Sources */,
+				0918DD8E27C1A8EC00113D66 /* CartButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
